@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.all {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+header h1 {
+    font-size: 44px;
+}
+
+.main {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.intro {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    height: 100%;
+    max-height: 300px;
+}
+
+.mostat1, .mostat2 {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.mostat1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mostat1 label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mostat1 input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mostat1 input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px !important;
+    width: 60% !important;
+    
+}
+
+.mostat1 input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.mostat2 p {
+    font-size: 18px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 25%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
