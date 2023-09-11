@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+<body>
+    <div class="all">
+        <header>
+            <h1>SIMPLE TRANSLATOR</h1>
+        </header>
+
+        <section  class="main">
+            <p class="intro">Welcome to simple translator.</p>
+
+            <div class="wrapper">
+                <div class="mostat1">
+                    <form action="translate" method="post">
+                        <label for="sentence">Write down your sentence:</label><br>
+                        <input type="text" id="sentence" name="sentence" required>
+                        <input type="submit" value="Translate">
+                    </form>
+                </div>
+                <div class="mostat2">
+                <p>Translated text: <br>
+                    {% for sentence in get_flashed_messages() %}
+                    {{sentence}}
+                    {% endfor %}
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <center>Created by Ehsan Shafiei</center>
+        </footer>
+    </div>
+</body>
+</html>
